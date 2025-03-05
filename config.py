@@ -4,7 +4,7 @@ APP_TITLE = None
 # APP_TITLE = "SC4x | Week 10 | Case Study | SQL 2"
 
 APP_INTRO = None
-# APP_INTRO = """The app evaluates and provides feedback on a single SQL query using an AI API (OpenAI, Gemini, or Claude)."""
+# APP_INTRO = """The app uses an AI API (OpenAI, Gemini, or Claude) to evaluate and provide feedback on a SQL query to calculate the cost of freight for all 'cool_stuff' products sold by sellers in the city of 'rio de janeiro'."""
 
 APP_HOW_IT_WORKS = None
 # APP_HOW_IT_WORKS = """ """
@@ -29,7 +29,7 @@ PHASES = {
     "attempt1": {
         "type": "text_area",
         "height": 200,
-        "label": """What is the cost of freight for all 'cool_stuff' products sold by sellers in the city of 'rio de janeiro'?""",
+        "label": """Write a query to calculate the cost of freight for all 'cool_stuff' products sold by sellers in the city of 'rio de janeiro'.""",
         "instructions": """ For this question, the students were asked to write a query to calculate the cost of freight (freight_value) for all 'cool_stuff' products (product_category_name) sold by sellers in the city of 'rio de janeiro'. The correct SQL query for this question:
     SELECT SUM(OrderItems.freight_value)
     FROM OrderItems, Sellers, Products

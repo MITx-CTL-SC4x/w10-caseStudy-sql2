@@ -1,7 +1,7 @@
 # SC4x | Week 10 | Case Study | SQL 2
 
 ## Overview
-The app evaluates and provides feedback on a single SQL query using an AI API (OpenAI, Gemini, or Claude).
+The app uses an AI API (OpenAI, Gemini, or Claude) to evaluate and provide feedback on a SQL query to calculate the cost of freight for all 'cool_stuff' products sold by sellers in the city of 'rio de janeiro'.
 
 ## Prerequisites
 - Python 3.6 or later
