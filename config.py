@@ -64,6 +64,25 @@ Provide compare the following student submission with the correct answer above. 
         """,
         "minimum_score": 2
     },
+    "attempt3": {
+        "type": "text_area",
+        "height": 200,
+        "label": """Do you want to try one more time?""",
+        "instructions": """ For this question, the students were asked to write a query to calculate the cost of freight (freight_value) for all 'cool_stuff' products (product_category_name) sold by sellers in the city of 'rio de janeiro'. The correct SQL query for this question:
+    SELECT SUM(OrderItems.freight_value)
+    FROM OrderItems, Sellers, Products
+    WHERE OrderItems.seller_id = Sellers.seller_id
+      AND OrderItems.product_id = Products.product_id
+      AND Sellers.seller_city = 'rio de janeiro'
+      AND Products.product_category_name = 'cool_stuff';
+Provide compare the following student submission with the correct answer above. Please provide feedback on the student submission if their solution is not correct. Do not provide the correct answer. Instead, provide guidance to help the student identify where they might be missing something in their code. They may use the ROUND() function, which could still give the correct result. """,
+        "value": " ",
+        "scored_phase": False,
+        "rubric": """
+            None
+        """,
+        "minimum_score": 2
+    },
 }
 
 ######## AI CONFIGURATION #############
