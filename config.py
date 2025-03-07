@@ -29,7 +29,7 @@ PHASES = {
     "attempt1": {
         "type": "text_area",
         "height": 200,
-        "label": """Write a query to calculate the cost of freight for all 'cool_stuff' products sold by sellers in the city of 'rio de janeiro'.""",
+        "label": """Write a query to calculate the cost of freight (freight_value) for all 'cool_stuff' products (product_category_name) sold by sellers in the city of 'rio de janeiro'.""",
         "instructions": """ The student was asked to write a query to calculate the cost of freight for all 'cool_stuff' products sold by sellers in the city of 'rio de janeiro'. One correct SQL query for this question is:
                 SELECT SUM(OrderItems.freight_value)
                 FROM OrderItems, Sellers, Products
